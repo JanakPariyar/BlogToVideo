@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto p-4 flex justify-between">
+            <a href="#" class="text-2xl font-bold">My Portfolio</a>
+            <ul class="flex space-x-4">
+                <li><a href="#about" class="hover:text-blue-600 nav-link">About</a></li>
+                <li><a href="#timeline" class="hover:text-blue-600 nav-link">Timeline</a></li>
+                <li><a href="#projects" class="hover:text-blue-600 nav-link">Projects</a></li>
+                <li><a href="#skills" class="hover:text-blue-600 nav-link">Skills</a></li>
+                <li><a href="#contact" class="hover:text-blue-600 nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about" class="container mx-auto p-8">
+        <div class="flex items-center mb-4">
+            <h1 class="static-text">I am <span></span></h1>
+        </div>
+        <div class="flex flex-col md:flex-row items-center">
+            <img src="assets/janakprofilecopy.jpg" alt="About Me" class="w-full md:w-1/3 rounded-lg shadow-md mb-4 md:mb-0">
+            <div class="ml-0 md:ml-4">
+                <p class="reveal" id="about-text-1">
+                    I am a meticulous Data Analyst with a passion for uncovering insights from complex datasets. My expertise lies in transforming raw data into actionable insights, enabling data-driven decision-making and driving business success. With a strong background in statistical analysis, data visualization, and machine learning, I am dedicated to leveraging data to solve real-world problems and optimize processes.
+                </p>
+                <p class="reveal mt-4" id="about-text-2">
+                    I possess a keen eye for detail and a methodical approach to data analysis, ensuring accuracy and reliability in my work. My proficiency in various analytical tools and programming languages, including Python, Flutter, and SQL, allows me to efficiently handle large datasets and perform advanced analytics. I am eager to collaborate with cross-functional teams and contribute to impactful projects that enhance business performance and innovation.
+                </p>
+                <div class="mt-4 flex space-x-4 items-center">
+                    <a href="https://github.com/JanakPariyar" target="_blank" rel="noopener noreferrer" class="text-gray-800 hover:text-gray-600">
+                        <!-- GitHub Icon -->
+                        <img src="assets/rounded.png" alt="GitHub" class="w-8 h-8">
+                    </a>
+                    <a href="https://www.linkedin.com/in/janak-pariyar-801252305/" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:text-blue-500">
+                        <!-- LinkedIn Icon -->
+                        <img src="assets/linkedin.png" alt="LinkedIn" class="w-8 h-8">
+                    </a>
+                    <a href="https://www.kaggle.com/janakpariyar" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:text-blue-200">
+                        <!-- Kaggle Icon -->
+                        <img src="assets/kaggle.jpeg" alt="Kaggle" class="w-8 h-8">
+                    </a>
+                    <a href="mailto:janakpariyar996@gmail.com" class="text-red-600 hover:text-red-400 flex items-center">
+                        <!-- Email Icon -->
+                        <img src="assets/gmail.png" alt="Email" class="w-8 h-8 mr-2">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="mt-4">
+                    <a href="assets/Janak.jpg" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all duration-300">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+<!-- Timeline Section -->
+<section id="timeline" class="container mx-auto p-8 relative overflow-x-auto">
+    <h2 class="text-4xl font-bold mb-8 text-center">My Journey</h2>
+    <div id="particles-js" class="absolute top-0 left-0 w-full h-full -z-10"></div>
+    <div class="timeline flex space-x-8">
+        <!-- Timeline Item -->
+        <div class="timeline-item animate-fadeIn flex-none w-80">
+            <div class="timeline-content p-4 border rounded-lg shadow-lg">
+                <img src="assets/Highschool.jpeg" alt="High School" class="w-full h-32 object-cover mb-4 rounded-lg">
+                <i class="fas fa-graduation-cap text-3xl text-blue-500 mb-4"></i>
+                <h3 class="font-bold">Graduated from High School</h3>
+                <p class="text-sm">Date: Feb 2019</p>
+                <p class="mt-2"><b>SOS HGS Bharatpur</b></p>
+            </div>
+        </div>
+        <!-- Timeline Item -->
+        <div class="timeline-item animate-fadeIn flex-none w-80">
+            <div class="timeline-content p-4 border rounded-lg shadow-lg">
+                <img src="assets/college.jpeg" alt="Computer Engineering" class="w-full h-32 object-cover mb-4 rounded-lg">
+                <i class="fas fa-code text-3xl text-green-500 mb-4"></i>
+                <h3 class="font-bold">Started Computer Engineering</h3>
+                <p class="text-sm">Date: Jan 2020</p>
+                <p class="mt-2"><b>Nepal Engineering College</b></p>
+            </div>
+        </div>
+        <!-- Timeline Item
+        <div class="timeline-item animate-fadeIn flex-none w-80">
+            <div class="timeline-content p-4 border rounded-lg shadow-lg">
+                <img src="path/to/your/image3.jpg" alt="Freelancing" class="w-full h-32 object-cover mb-4 rounded-lg">
+                <i class="fas fa-briefcase text-3xl text-purple-500 mb-4"></i>
+                <h3 class="font-bold">Started Freelancing</h3>
+                <p class="text-sm">Date: Dec 2020</p>
+                <p class="mt-2"><b>Started working as a Software Engineer at a leading tech company</b></p>
+            </div>
+        </div> -->
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-gray-200 p-8">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Project 1 -->
+                <div class="bg-white p-4 rounded-lg shadow-md transform transition-transform hover:scale-105">
+                    <a href="https://github.com/JanakPariyar/Kotha-Chha-Mobile-App.git"><img src="assets/roomfinder.jpeg" alt="Project 1" class="rounded-lg"></a>
+                    <h3 class="text-xl font-bold mt-2">Kotha Chha?</h3>
+                    <p><b>Kotha Chha</b> is a room finder system . During the production i was engaged in UI/UX design using Flutter</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md transform transition-transform hover:scale-105">
+                    <a href="https://github.com/JanakPariyar/hamro_shop.git"><img src="assets/pasaledai.jpeg" alt="Project 1" class="rounded-lg"></a>
+                    <h3 class="text-xl font-bold mt-2">Pasale Dai</h3>
+                    <p><b>Pasale Dai</b> is an inventory management system. I solely developed this system for small business to manage the inventory using Flutter and Hive</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-md transform transition-transform hover:scale-105">
+                    <img src="assets/melodymate.jpeg" alt="Project 1" class="rounded-lg">
+                    <h3 class="text-xl font-bold mt-2">MelodyMate</h3>
+                    <p><b>MelodyMate</b> is a Chatbot System that uses machine learning techniques to recommend the song based on the user interaction and their mood</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container mx-auto p-8">
+        <h2 class="text-3xl font-bold mb-4">Skills</h2>
+        <div class="flex flex-wrap">
+            <!-- Skill 1 -->
+            <div class="w-1/2 md:w-1/4 p-2">
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fab fa-python text-6xl text-blue-500 moving-icon"></i>
+                    <p class="mt-2 font-bold">Basic Python</p>
+                    <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-pink-200">
+                            <div style="width:90%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Skill 2-->
+            <div class="w-1/2 md:w-1/4 p-2">
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fab fa-python text-6xl text-blue-500 moving-icon"></i>
+                    <p class="mt-2 font-bold">Flutter</p>
+                    <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-pink-200">
+                            <div style="width:75%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Skill 3-->
+            <div class="w-1/2 md:w-1/4 p-2">
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fab fa-python text-6xl text-blue-500 moving-icon"></i>
+                    <p class="mt-2 font-bold">Excel & Powerpoints</p>
+                    <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-pink-200">
+                            <div style="width:90%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Skill 4-->
+            <div class="w-1/2 md:w-1/4 p-2">
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fab fa-python text-6xl text-blue-500 moving-icon"></i>
+                    <p class="mt-2 font-bold">Firebase</p>
+                    <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-pink-200">
+                            <div style="width:60%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Skill 5-->
+            <div class="w-1/2 md:w-1/4 p-2">
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fab fa-python text-6xl text-blue-500 moving-icon"></i>
+                    <p class="mt-2 font-bold">Hive</p>
+                    <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-pink-200">
+                            <div style="width:60%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Skill 6-->
+            <div class="w-1/2 md:w-1/4 p-2">
+                <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                    <i class="fab fa-python text-6xl text-blue-500 moving-icon"></i>
+                    <p class="mt-2 font-bold">C and C++</p>
+                    <div class="relative pt-1">
+                        <div class="overflow-hidden h-2 mb-4 text-xs flex rounded bg-pink-200">
+                            <div style="width:60%" class="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-pink-500"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-200 p-8">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-4">Contact</h2>
+            <form action="https://formspree.io/f/xwkgzydk" method="POST" class="bg-white p-4 rounded-lg shadow-md" id="contact-form">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700 font-semibold">Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 font-semibold">Email</label>
+                    <input type="email" id="email" name="email" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700 font-semibold">Message</label>
+                    <textarea id="message" name="message" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required></textarea>
+                </div>
+                <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all duration-300">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white p-4 shadow-md text-center">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
